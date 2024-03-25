@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.errorAnimation{    
+  animation: errorAnimation 0.4s 0s 1 linear;
+  -webkit-animation: errorAnimation 0.4s 0s 1 linear;
+}
+
+body {
+  background: #ace2e1;
+  text-align: center;
+}
+
+.wholeGame {
+  background: #f7eedd;
+  width: 600px;
+  margin: 60px auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.card {
+  background: #ffe2ad;
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 130px;
+  width: 130px;
+  position: relative;
+}
+
+@keyframes errorAnimation {
+  0% {
+    left: 50%;
+  }
+  10%{    
+    left: 40%;
+  }
+  20%{    
+    left: 50%;
+  }
+  30%{    
+    left: 60%;
+  }
+  40%{    
+    left: 50%;
+  }
+  50%{    
+    left: 40%;
+  }
+  60% {
+    left: 50%;
+  }
+  70%{    
+    left: 60%;
+  }
+  80%{    
+    left: 50%;
+  }
+  90%{    
+    left: 40%;
+  }
+  100%{    
+    left: 50%;
+  }
+}
